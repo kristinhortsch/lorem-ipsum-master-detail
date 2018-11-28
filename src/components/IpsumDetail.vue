@@ -1,9 +1,10 @@
 <template>
   <section v-if="ipsum">
     <h3>{{ ipsum.title }}</h3>
-    <!-- <p>author: {{ ipsum.author }}</p>
+    <p>author: {{ ipsum.author }}</p>
     <p>category: {{ ipsum.category }}</p>
-    <p>body: {{ ipsum.body }}</p> -->
+    <p>body: 
+      <div v-html="ipsum.body"></div></p>
   </section>
 </template>
 
