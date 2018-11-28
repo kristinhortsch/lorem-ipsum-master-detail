@@ -1,6 +1,5 @@
 <template>
   <ul>
-    <p>Hello from IpsumList</p>
     <IpsumItem v-for="ipsum in ipsums"
     :key="ipsum.title"
     :ipsum="ipsum"/>
@@ -22,5 +21,8 @@ export default {
 </script>
 
 <style>
+  ul {
+    list-style-type: none;
+  }
 
 </style>

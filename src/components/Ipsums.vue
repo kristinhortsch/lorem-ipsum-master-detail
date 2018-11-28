@@ -1,6 +1,6 @@
 <template>
   <section>
-    <IpsumList :ipsums="ipsums"/>
+    <IpsumList v-bind:ipsums="ipsums"/>
     <AddIpsum />
     <Ipsum />
     <p>Hi</p>
