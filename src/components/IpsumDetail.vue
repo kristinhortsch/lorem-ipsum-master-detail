@@ -1,11 +1,17 @@
 <template>
-  <section>
-    <p>Hello from IpsumDetail</p>
+  <section v-if="ipsum">
+    <h3>{{ ipsum.title }}</h3>
+    <!-- <p>author: {{ ipsum.author }}</p>
+    <p>category: {{ ipsum.category }}</p>
+    <p>body: {{ ipsum.body }}</p> -->
   </section>
 </template>
 
 <script>
 export default {
+  props: {
+    ipsum: Object
+  }
 
 };
 </script>

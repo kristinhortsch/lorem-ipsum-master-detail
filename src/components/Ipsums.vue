@@ -4,7 +4,7 @@
       v-bind:ipsums="ipsums"
       v-bind:onSelect="handleSelect"/>
     <AddIpsum />
-    <Ipsum />
+    <Ipsum v-bind:ipsum="selected"/>
     <p>Hi</p>
   </section>
 </template>
