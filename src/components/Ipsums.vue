@@ -1,6 +1,8 @@
 <template>
   <section>
-    <IpsumList v-bind:ipsums="ipsums"/>
+    <IpsumList 
+      v-bind:ipsums="ipsums"
+      v-bind:onSelect="handleSelect"/>
     <AddIpsum />
     <Ipsum />
     <p>Hi</p>
@@ -16,13 +18,20 @@ import Ipsum from './Ipsum.vue';
 export default {
   data() {
     return {
-      ipsums: ipsumApi.getIpsums()
+      ipsums: ipsumApi.getIpsums(),
+      selected: null
     };
   },
   components: {
     AddIpsum,
     IpsumList,
     Ipsum
+  },
+  methods: {
+    handleSelect(ipsum) {
+      this.selected = ipsum;
+      console.log('you selected an item');
+    }
   }
 };
 </script>
