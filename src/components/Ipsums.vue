@@ -1,10 +1,9 @@
 <template>
   <section>
-    <IpsumList/>
+    <IpsumList :ipsums="ipsums"/>
     <AddIpsum />
     <Ipsum />
     <p>Hi</p>
-    <img v-bind:src="ipsums.authorURL" />
   </section>
 </template>
 
@@ -29,5 +28,9 @@ export default {
 </script>
 
 <style>
+  img {
+    width: 100%;
+    height: auto;
+  }
 
 </style>

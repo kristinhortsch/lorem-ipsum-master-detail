@@ -1,12 +1,15 @@
 <template>
-  <section>
+  <li>
+    <p>{{ ipsum.title }}</p>
     <p>Hello from IpsumItem</p>
-  </section>
+  </li>
 </template>
 
 <script>
 export default {
-
+  props: {
+    ipsum: Object
+  }
 };
 </script>
 
