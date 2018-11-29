@@ -27,5 +27,7 @@
         margin-bottom: 5px;
         padding: 10px;
         font-size: 4em;
+        text-shadow: 2px 2px 2px lightgray;
+        font-weight: 400;
     }
 </style>

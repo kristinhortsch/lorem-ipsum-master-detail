@@ -7,7 +7,8 @@
     <div v-else>
       <h2>Add a New Ipsum</h2>
       <IpsumForm class="form"
-        :onAdd="handleAdd"/>
+        :onAdd="handleAdd"
+        :onCancel="() => show = false"/>
     </div>
   </section>
 </template>
@@ -46,7 +47,7 @@ export default {
     padding: 0px;
     margin: 0px;
   }
-  
+
   .form {
     margin: 0px auto;
     padding: 0px;
