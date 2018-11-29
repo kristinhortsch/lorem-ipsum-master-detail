@@ -3,6 +3,7 @@
     <AddIpsum
       v-bind:onAdd="handleAdd"/>
     <IpsumList 
+      class="list"
       v-bind:ipsums="ipsums"
       v-bind:onSelect="handleSelect"/>
     <Ipsum v-bind:ipsum="selected"/>
@@ -44,6 +45,10 @@ export default {
   img {
     width: 100%;
     height: auto;
+  }
+
+  section {
+    padding: 20px;
   }
 
 </style>

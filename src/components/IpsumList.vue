@@ -25,7 +25,13 @@ export default {
 
 <style>
   ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
     list-style-type: none;
+    margin: 0;
+    padding: 0;
   }
 
 </style>

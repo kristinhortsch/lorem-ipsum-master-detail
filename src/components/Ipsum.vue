@@ -4,10 +4,11 @@
       v-bind:ipsum="ipsum"/>
   </section>
 </template>
+
 <script>
-/*like animal detail*/
+
 import IpsumDetail from './IpsumDetail.vue';
-import IpsumForm from './IpsumForm.vue';
+
 export default {
   data() {
     return {
@@ -19,13 +20,12 @@ export default {
     onAdd: Function
   },
   components: {
-    IpsumDetail,
-    IpsumForm
+    IpsumDetail
   }
 
 };
 </script>
 
 <style>
-
+ 
 </style>

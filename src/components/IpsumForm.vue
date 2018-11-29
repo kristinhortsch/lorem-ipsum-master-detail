@@ -43,5 +43,24 @@ export default {
 </script>
 
 <style>
+  span {
+    width: 190px;
+    display: inline-block;
+  }
+
+  input, textarea {
+    width: 450px;
+  }
+
+  label {
+    display: flex;
+    padding: 10px;
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+
+  textarea {
+    height: 100px;
+  }
 
 </style>
