@@ -1,16 +1,5 @@
 <template>
   <section>
-    <div v-if="!show">
-      <button @click="show = true">Add an Ipsum</button>
-    </div>
-    <div v-else>
-    
-      <h2>Add a New Ipsum</h2>
-      <IpsumForm 
-        v-bind:ipsum="ipsum"
-        :onAdd="handleAdd"/>
-        
-    </div>
     <IpsumDetail
       v-bind:ipsum="ipsum"/>
   </section>
@@ -32,12 +21,6 @@ export default {
   components: {
     IpsumDetail,
     IpsumForm
-  },
-  methods: {
-    handleAdd(ipsum) {
-      this.show = false;
-      this.onAdd(ipsum);
-    }
   }
 
 };
