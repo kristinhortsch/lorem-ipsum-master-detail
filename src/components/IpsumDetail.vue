@@ -6,7 +6,7 @@
       <p>Category: {{ ipsum.category }}</p>
     </div>
     <div class="body">Body of Text
-      <div v-html="ipsum.body"></div>
+      <div v-html="ipsum.body" class="words"></div>
     </div>
   </section>
 </template>
@@ -20,7 +20,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
   .detail {
     text-align: center;
     border: 3px solid gray;
@@ -31,5 +31,8 @@ export default {
   .top {
     border-bottom: 3px solid gray;
   }
-
+  .words p img {
+    max-width: 10px;
+  }
+ 
 </style>

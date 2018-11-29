@@ -42,9 +42,13 @@ export default {
 </script>
 
 <style>
+  
   img {
-    width: 100%;
+    width: 35vw;
     height: auto;
+    display: block;
+    margin: 10px auto;
+    box-shadow: 2px 2px 1px black;
   }
 
   section {
