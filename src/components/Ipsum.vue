@@ -4,8 +4,11 @@
       <button @click="show = true">Add an Ipsum</button>
     </div>
     <div v-else>
+    
       <h2>Add a New Ipsum</h2>
-      <IpsumForm v-show="true" v-bind:ipsum="ipsum"/>
+      <IpsumForm 
+        v-bind:ipsum="ipsum"
+        :onAdd="handleAdd"/>
         
     </div>
     <IpsumDetail
