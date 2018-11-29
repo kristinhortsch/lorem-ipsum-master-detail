@@ -1,12 +1,10 @@
 <template>
   <section>
-    <IpsumDetail
-      v-bind:ipsum="ipsum"/>
+    <IpsumDetail v-bind:ipsum="ipsum"/>
   </section>
 </template>
 
 <script>
-
 import IpsumDetail from './IpsumDetail.vue';
 
 export default {
@@ -22,10 +20,5 @@ export default {
   components: {
     IpsumDetail
   }
-
 };
 </script>
-
-<style>
- 
-</style>

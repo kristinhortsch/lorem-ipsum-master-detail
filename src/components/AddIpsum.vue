@@ -6,7 +6,7 @@
     </div>
     <div v-else>
       <h2>Add a New Ipsum</h2>
-      <IpsumForm
+      <IpsumForm class="form"
         :onAdd="handleAdd"/>
     </div>
   </section>
@@ -39,11 +39,16 @@ export default {
   .form-section {
     border: 3px solid gray;
     margin: 5px 0px 15px 0px;
-    padding: 20px;
     text-align: center;
-
   }
 
+  h2 {
+    padding: 0px;
+    margin: 0px;
+  }
   
-
+  .form {
+    margin: 0px auto;
+    padding: 0px;
+  }
 </style>

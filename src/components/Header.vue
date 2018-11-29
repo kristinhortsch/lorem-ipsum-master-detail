@@ -5,12 +5,6 @@
     </header>
 </template>
 
-<script>
-export default {
-
-};
-</script>
-
 <style scoped>
     header {
         background: black;
@@ -34,5 +28,4 @@ export default {
         padding: 10px;
         font-size: 4em;
     }
-
 </style>

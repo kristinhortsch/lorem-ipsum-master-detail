@@ -19,9 +19,10 @@ export default {
     height: 150px;
     border: 5px solid;
     background: black;
-    border: 3px solid red;
+    border: 3px solid navy;
     padding: 10px;
     margin-bottom: 10px;
+    box-shadow: 2px 2px 2px black;
   }
 
   .tiles {

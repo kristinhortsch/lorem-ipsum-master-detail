@@ -1,7 +1,6 @@
 <template>
   <section>
-    <AddIpsum
-      v-bind:onAdd="handleAdd"/>
+    <AddIpsum v-bind:onAdd="handleAdd"/>
     <IpsumList 
       class="list"
       v-bind:ipsums="ipsums"
@@ -42,9 +41,9 @@ export default {
 </script>
 
 <style>
-  
   img {
     width: 35vw;
+    max-width: 250px;
     height: auto;
     display: block;
     margin: 10px auto;
@@ -54,5 +53,4 @@ export default {
   section {
     padding: 20px;
   }
-
 </style>

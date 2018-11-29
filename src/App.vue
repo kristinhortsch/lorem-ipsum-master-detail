@@ -16,7 +16,6 @@ export default {
     Ipsums
   }
 };
-
 </script>
 
 <style>

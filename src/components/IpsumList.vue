@@ -1,10 +1,10 @@
 <template>
   <ul>
     <IpsumItem 
-    v-for="ipsum in ipsums"
-    @click.native="onSelect(ipsum)"
-    :key="ipsum.title"
-    :ipsum="ipsum"/>
+      v-for="ipsum in ipsums"
+      @click.native="onSelect(ipsum)"
+      :key="ipsum.title"
+      :ipsum="ipsum"/>
   </ul>
 </template>
 
@@ -19,7 +19,6 @@ export default {
   components: {
     IpsumItem
   }
-
 };
 </script>
 
@@ -33,5 +32,4 @@ export default {
     margin: 0;
     padding: 0;
   }
-
 </style>
