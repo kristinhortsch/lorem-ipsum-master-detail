@@ -36,7 +36,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
   .form-section {
     border: 3px solid gray;
     margin: 5px 0px 15px 0px;
@@ -48,7 +48,6 @@ export default {
     border-radius: 5px;
     margin: 5px;
     font-size: 0.8em;
-    padding: 4px;
   }
 
   h2 {

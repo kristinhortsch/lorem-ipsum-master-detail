@@ -2,7 +2,7 @@
   "name": "lorem-ipsum-master-detail",
   "version": "0.1.0",
   "private": true,
-  "shttps://gist.github.com/kristinhortsch/d83eaa3b20e2ccfc74c71865f0a6d79acripts": {
+  "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint --no-fix",
