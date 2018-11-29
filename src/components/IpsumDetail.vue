@@ -3,8 +3,8 @@
     <h3>{{ ipsum.title }}</h3>
     <p>author: {{ ipsum.author }}</p>
     <p>category: {{ ipsum.category }}</p>
-    <p>body: 
-      <div v-html="ipsum.body"></div></p>
+    <p>body:</p>
+    <div v-html="ipsum.body"></div>
   </section>
 </template>
 
