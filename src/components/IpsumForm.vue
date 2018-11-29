@@ -6,6 +6,18 @@
         <input v-model="ipsum.title" required>
       </label>
       <label>
+        <span>Author:</span>
+        <input v-model="ipsum.author" required>
+      </label>
+      <label>
+        <span>Category:</span>
+        <input v-model="ipsum.category" required>
+      </label>
+      <label>
+        <span>Body:</span>
+        <textarea v-model="ipsum.body" required></textarea>
+      </label>
+      <label>
         <span></span>
         <button type="submit">Add</button>
       </label>
@@ -18,7 +30,8 @@ export default {
   data() {
     return {
       ipsum: {
-        title: ''
+        title: '',
+        author: ''
       }
     };
 
