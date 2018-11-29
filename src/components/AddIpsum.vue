@@ -43,9 +43,19 @@ export default {
     text-align: center;
   }
 
+  button {
+    border: 2px solid black;
+    border-radius: 5px;
+    margin: 5px;
+    font-size: 0.8em;
+    padding: 4px;
+  }
+
   h2 {
-    padding: 0px;
+    padding-bottom: 5px;
     margin: 0px;
+    font-weight: 550;
+    color: navy;
   }
 
   .form {

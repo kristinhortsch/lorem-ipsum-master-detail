@@ -25,14 +25,10 @@
       <label>
         <span></span>
         <button type="submit">Add</button>
-      </label>
-
-      <label>
-        <span></span>
         <button @click="onCancel" type="button">Cancel</button>
       </label>
+    
     </form>
-
   </section>
 </template>
 
@@ -53,7 +49,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
   form {
     text-align: center;
     margin-left: 10%;
@@ -61,21 +57,28 @@ export default {
   button {
     border: 2px solid black;
     border-radius: 5px;
+    margin: 5px;
+    font-size: 0.75em;
+    padding: 6px;
   }
+
   span {
     width: 190px;
     display: inline-block;
   }
+
   input, textarea {
     width: 450px;
   }
+
   label {
     display: flex;
-    padding: 10px;
-    font-size: 1.2em;
-    font-weight: bold;
+    padding: 5px;
+    font-size: 1.1em;
+    font-weight: 500;
   }
+
   textarea {
-    height: 100px;
+    height: 50px;
   }
 </style>
