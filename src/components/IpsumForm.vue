@@ -22,8 +22,7 @@
         <textarea v-model="ipsum.body" required></textarea>
       </label>
 
-      <label>
-        <span></span>
+      <label class="button">
         <button type="submit">Add</button>
         <button @click="onCancel" type="button">Cancel</button>
       </label>
@@ -53,7 +52,7 @@ export default {
   form {
     text-align: center;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
   }
   button {
     border: 2px solid black;
@@ -62,13 +61,17 @@ export default {
     font-size: 0.75em;
   }
 
+  .button {
+    display: block;
+  }
+
   span {
     display: inline-block;
   }
 
   input, textarea {
-    width: 150px;
     height: 20px;
+    width: 13vw;
   }
 
   label {
@@ -76,5 +79,24 @@ export default {
     padding: 5px;
     font-size: 1.1em;
     font-weight: 500;
+  }
+
+  @media only screen and (max-width: 1160px) {
+    form {
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      margin-left: 5%;
+    }
+
+    span {
+      width: 90px;
+    }
+    input, textarea {
+    width: 60vw;
+    height: 20px;
+  }
+
   }
 </style>
