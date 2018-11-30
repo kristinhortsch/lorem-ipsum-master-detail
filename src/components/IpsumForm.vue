@@ -89,14 +89,12 @@ export default {
       flex-direction: column;
       margin-left: 5%;
     }
-
     span {
       width: 90px;
     }
     input, textarea {
     width: 60vw;
     height: 20px;
-  }
-
+    }
   }
 </style>
